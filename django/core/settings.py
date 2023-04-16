@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3t-kcm@7^&^n_locwg=)m(@phwfpu0ihyi+xgay#$)-ht56bqi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','desktop-pilcot0']
 
 
 # Application definition
@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'djoser',
     'corsheaders',
     'django_filters',
-    'rest_framework_json_api'
+    'rest_framework_json_api',
+     'django_rest_passwordreset',
+   
 ]
 
 MIDDLEWARE = [
@@ -81,6 +83,33 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:4200",
+    "https://www.zarinpal.com",
+    "http://127.0.0.1:8000"
+]
+
+CSRF_TRUSTED_ORIGINS = [
+     "http://127.0.0.1:4200",
+    "https://www.zarinpal.com",
+    "http://127.0.0.1:8000"
+]
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -174,3 +203,4 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('JWT',),
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1)
 }
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

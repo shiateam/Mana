@@ -20,11 +20,17 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 
+import store
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("store.urls", namespace="store")),
     path("auth/", include("djoser.urls")),
     path("auth/", include("djoser.urls.jwt")),
+    # path('request/', store.views.send_request, name='request'),
+    path('verify/', store.views.verify , name='verify'),
+    path('account/', include("account.urls", namespace="account")),
+    path('auth/password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),
 ]
 
 if settings.DEBUG:

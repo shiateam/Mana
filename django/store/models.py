@@ -170,7 +170,6 @@ class CartItem(models.Model):
         unique_together = [['cart','product']]
 
 class Customer(models.Model):
-    # phone = models.CharField(max_length=225)
     first_name = models.CharField(max_length=225)
     last_name = models.CharField(max_length=225)
     user = models.OneToOneField(settings.AUTH_USER_MODEL,on_delete=CASCADE)
@@ -182,7 +181,7 @@ class Customer(models.Model):
 
 
     def __str__(self):
-        return f'{self.first_name} {self.last_name}'
+        return f'{self.user.username}'
 
 
     # @admin.display(ordering='first_name')
@@ -195,7 +194,7 @@ class Customer(models.Model):
     
 
     class Meta:
-        ordering = ['user__first_name' , 'user__last_name']
+        ordering = ['user__username']
 
 
 class Order(models.Model):
@@ -213,17 +212,23 @@ class Order(models.Model):
         max_length=1,choices=PAYMENT_STATUS_CHOICES,default= PAYMENT_STATUS_FAILED,
 
     )
-    customer = models.ForeignKey(Customer,on_delete= models.PROTECT)
+    customer = models.ForeignKey(Customer,on_delete= models.PROTECT,related_name='order')
     Authority = models.CharField(max_length=1100 , default=0)
 
     def get_total_price(self):
        return sum([item.quantity * item.unit_price for item in self.items.all()]) 
+    
+    def __str__(self):
+        return f'{self.customer.first_name} {self.customer.last_name}'
 
 class OrderItem (models.Model):
     order = models.ForeignKey(Order,on_delete=PROTECT , related_name='items')
     product = models.ForeignKey(Product,on_delete=PROTECT , related_name= 'orderitems')
     quantity = models.PositiveSmallIntegerField()
     unit_price = models.DecimalField(max_digits=6,decimal_places=3)
+
+    def __str__(self):
+        return f'{self.product.title}'
 
 class SpesialProduct (models.Model):
     product = models.ForeignKey(Product,on_delete=PROTECT )
@@ -236,4 +241,31 @@ class BestSellingProduct(models.Model):
 
 class LastProduct(models.Model):
     product = models.ForeignKey(Product,on_delete=PROTECT )
+
+class Comment(models.Model):
+    product = models.ForeignKey(Product,on_delete=PROTECT,related_name="product_comment" )
+    created_at = models.DateTimeField(auto_now_add=True)
+    author = models.CharField(max_length=255)
+    text = models.TextField()
+
+class Slider(models.Model):
+    image_1 = models.ImageField(
+        verbose_name= _("slider1"),
+        help_text=_("Upload a product image"),
+        upload_to = "images/",
+        default = "images/default.png",
+    )
+    image_2 = models.ImageField(
+        verbose_name= _("slider2"),
+        help_text=_("Upload a product image"),
+        upload_to = "images/",
+        default = "images/default.png",
+    )
+    image_3 = models.ImageField(
+        verbose_name= _("slider3"),
+        help_text=_("Upload a product image"),
+        upload_to = "images/",
+        default = "images/default.png",
+    )
+
 

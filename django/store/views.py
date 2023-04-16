@@ -1,13 +1,13 @@
 from decimal import Context
 from rest_framework import status 
 from rest_framework.filters import SearchFilter
-from django.http import request, response
+from django.http import HttpResponseRedirect, request, response
 from django.urls.conf import include
 from rest_framework.mixins import CreateModelMixin, DestroyModelMixin, RetrieveModelMixin, UpdateModelMixin
 from rest_framework.serializers import Serializer
 
 from store.paginations import LargeResultsSetPagination
-from .models import BestSellingProduct, LastProduct, Product as ProductModel, SpesialProduct
+from .models import BestSellingProduct, Comment, LastProduct, Product as ProductModel, SpesialProduct
 from rest_framework import generics,viewsets
 from rest_framework.viewsets import ModelViewSet,GenericViewSet
 from rest_framework.permissions import IsAdminUser, IsAuthenticated , AllowAny
@@ -21,13 +21,19 @@ from zeep import Client
 from rest_framework_json_api import django_filters,filters
 import re
 from rest_framework_json_api.filters import QueryParameterValidationFilter,OrderingFilter
-MERCHANT = 'bdae3de6-ef15-49e6-903b-34cc18e656cb'
-# client = Client('https://www.zarinpal.com/pg/services/WebGate/wsdl')
-# amount = 5000  # Toman / Required
+
+from django.http import HttpResponse ,JsonResponse
+from django.shortcuts import redirect
+from django.contrib import messages
+
+client = Client('https://www.zarinpal.com/pg/services/WebGate/wsdl')
+  # Toman / Required
 description = "توضیحات مربوط به تراکنش را در این قسمت وارد کنید"  # Required
 email = 'email@example.com'  # Optional
 mobile = '09123456789'  # Optional
-CallbackURL = 'http://127.0.0.1:4200' # Important: need to edit for realy server.
+CallbackURL = 'http://127.0.0.1:4200/order-success' # Important: need to edit for realy server.
+MERCHANT = 'bdae3de6-ef15-49e6-903b-34cc18e656cb'
+
 class MyQPValidator(QueryParameterValidationFilter):
     query_regex = re.compile(r'^(sort|include|page|page_size)$|^(filter|fields|page)(\[[\w\.\-]+\])?$')
 class ProductListView(generics.ListAPIView):
@@ -133,7 +139,7 @@ class CustomerViewSet(CreateModelMixin,RetrieveModelMixin,UpdateModelMixin,Gener
 
     @action(detail= False , methods=['GET','PUT'])
     def me(self,request):
-        (customer,created) = Customer.objects.get_or_create(user_id = request.user.id)
+        customer = Customer.objects.get(user_id = request.user.id)
         if request.method == 'GET':
             serializer  = CustomerSerializer(customer)
             return Response(serializer.data)  
@@ -146,7 +152,7 @@ class CustomerViewSet(CreateModelMixin,RetrieveModelMixin,UpdateModelMixin,Gener
 class OrderViewSet(ModelViewSet):
 
     http_method_names = ['patch','get','post','delete','head','options']
-
+    amount = 100
     def get_permissions(self):
         if self.request.method == ['PATCH','DELETE']:
             return [IsAdminUser()]
@@ -158,14 +164,17 @@ class OrderViewSet(ModelViewSet):
             data=request.data,
             context = {'user_id': self.request.user.id})
         serializer.is_valid(raise_exception=True)
-        order = serializer.save()
-        # result = client.service.PaymentRequest(MERCHANT, order.get_total_price(), description, email, mobile, CallbackURL)
-        # if result.Status != 100:
-        order.Authority = "A10000"
-        serializer = OrderSerializer(order)
-        return Response(serializer.data)
-        # serializer  = zarinpallSerializer(result)
-        # return Response(serializer.data) 
+        Status = serializer.validated_data['Status']
+        Authority = serializer.validated_data['Authority']
+        if Status =='OK':
+            order = serializer.save()
+            result = client.service.PaymentVerification(MERCHANT,Authority,order.get_total_price())    
+        # if result.Status == 100:
+            serializer = OrderSerializer(order)
+            return Response(serializer.data)
+        else:
+            return JsonResponse('Error code: ' + str(result.Status))
+
   
 
 
@@ -186,18 +195,53 @@ class OrderViewSet(ModelViewSet):
         if user.is_staff:
             return Order.objects.all()
 
-        (customer_id , created) = Customer.objects.only('id').get_or_create(user_id = user.id)
+        customer_id  = Customer.objects.only('id').get(user_id = user.id)
         return Order.objects.filter(customer_id = customer_id)
 
-    # @action(detail= False , methods=['POST'])
-    # def verify(self,request):
-    #     order = UpdateOrderSerializer(data = request.data)
-    #     order.is_valid(raise_exception=True)
-    #     # result = client.service.PaymentVerification(MERCHANT, serializer.Authority, serializer.get_total_price())
-    #     # if result.Status != 100:
-    #     return Response(status=status.HTTP_200_OK)
-    #     # serializer = OrderSerializer(order)
-    #     # return Response(serializer.data)
+    @action(detail= False , methods=['POST'])
+    def verify(self,request):
+       
+        serializer = zarinpallSerializer(data = request.data)
+        if serializer.is_valid():
+            Authority = serializer.validated_data['Authority']
+            price = serializer.validated_data['price']
+            result = client.service.PaymentVerification(MERCHANT,Authority,price)
+        if result.Status != 100:
+          return Response(serializer.error, status=status.HTTP_200_OK)
+        return Response(serializer.data,status=status.HTTP_202_ACCEPTED)
+          
+    @action(detail= False , methods=['POST'])
+    def go_to_zarinpal(self,request):
+        serializer = getTotalPriceSerializer(data = request.data)
+        if serializer.is_valid():
+            price = serializer.validated_data['price']
+            result = client.service.PaymentRequest(MERCHANT,price, description, email, mobile, CallbackURL)
+            if result.Status == 100:
+                serializer = zarinpallSerializer(result)
+                return Response(serializer.data,status = status.HTTP_200_OK)
+            else:
+                return JsonResponse(status = status.HTTP_406_NOT_ACCEPTABLE)
+            
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+class CommentViewSet(CreateModelMixin,RetrieveModelMixin,DestroyModelMixin,GenericViewSet):
+    queryset = Comment.objects.prefetch_related('product').all()
+    serializer_class = CommentSerializer 
+
+
+def verify(request):
+    amount = 500
+    if request.GET.get('Status') == 'OK':
+        result = client.service.PaymentVerification(MERCHANT, request.GET['Authority'], amount)
+        if result.Status == 100:
+            return redirect('http://127.0.0.1:4200/order-seccess')
+        elif result.Status==101:
+             return redirect('http://127.0.0.1:4200/order-seccess')
+        else:
+            messages.error(request,'فرآیند پرداخت موفقیت آمیز نبود !','error')
+            return redirect('http://127.0.0.1:4200/order-seccess')
+    else:
+        messages.error(request,'تراکنش توسط شما کنسل شد‌ !','error')
+        return redirect('http://127.0.0.1:4200/order-seccess')
         
