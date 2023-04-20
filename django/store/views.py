@@ -173,7 +173,7 @@ class OrderViewSet(ModelViewSet):
             serializer = OrderSerializer(order)
             return Response(serializer.data)
         else:
-            return JsonResponse('Error code: ' + str(result.Status))
+            return JsonResponse(messages = "تراکنش توسط شما لغو گردید", status=status.HTTP_400_BAD_REQUEST)
 
   
 

@@ -25,9 +25,8 @@ class sendCodeView(APIView):
             phone = request.data['phone'] 
             print (phone)
             user = User.objects.filter(username =phone).first() 
-            print(user.id)
             if user is None:
-                return Response(message =  f"{phone} موجود نیست ", status=status.HTTP_400_BAD_REQUEST)         
+                return Response({'message' :  f"شماره همراه وارد شده صحیح نمی باشد"}, status=status.HTTP_400_BAD_REQUEST)         
             try:
                     code = randint(100000,999999)
                     ValidationCode.objects.create(mobile=phone,validation_code=code)

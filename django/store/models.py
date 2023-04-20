@@ -158,6 +158,16 @@ class ProductImage(models.Model):
 class Cart(models.Model):
     id = models.UUIDField(primary_key=True , default=uuid4)
     created_at = models.DateTimeField(auto_now_add=True)
+    send_price = models.DecimalField(verbose_name=_("Send Price"),
+        help_text=_("Maximum 999.999"),
+        error_messages= {
+            "name":{
+                "max_length":_("The price must be between 0 and 999.999."),
+            },
+        },
+        max_digits= 6,
+        decimal_places=3,
+        default=380.000)
 
 class CartItem(models.Model):
     cart = models.ForeignKey(Cart,on_delete=models.CASCADE,related_name="items")
@@ -198,9 +208,9 @@ class Customer(models.Model):
 
 
 class Order(models.Model):
-    PAYMENT_STATUS_PENDING = 'P'
-    PAYMENT_STATUS_COMPLETE = 'C'
-    PAYMENT_STATUS_FAILED = 'F'
+    PAYMENT_STATUS_PENDING = 'در حال پرداخت'
+    PAYMENT_STATUS_COMPLETE = 'پرداخت شده'
+    PAYMENT_STATUS_FAILED = 'پرداخت نشده'
     PAYMENT_STATUS_CHOICES = [
         (PAYMENT_STATUS_PENDING,'Pending'),
         (PAYMENT_STATUS_COMPLETE,'Complete'),
@@ -209,7 +219,7 @@ class Order(models.Model):
     ]
     placed_at = models.DateTimeField(auto_now_add=True)
     payment_status = models.CharField(
-        max_length=1,choices=PAYMENT_STATUS_CHOICES,default= PAYMENT_STATUS_FAILED,
+        max_length=13,choices=PAYMENT_STATUS_CHOICES,default= PAYMENT_STATUS_FAILED,
 
     )
     customer = models.ForeignKey(Customer,on_delete= models.PROTECT,related_name='order')
