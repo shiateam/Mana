@@ -1,0 +1,1140 @@
+Not Found: /favicon.ico
+Unauthorized: /store/orders/go_to_zarinpal/
+Unauthorized: /store/orders/go_to_zarinpal/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider/
+Not Found: /store/slider
+Not Found: /store/slider
+Internal Server Error: /store/carts/a86d29ca-8bdf-457d-93f0-084ecd28c4f0/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/spesial/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/api/category
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/slider
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/spesial/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/spesial/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/carts/a86d29ca-8bdf-457d-93f0-084ecd28c4f0/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /auth/users/me/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/spesial/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/spesial/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/api/category
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/spesial/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/slider
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/carts/a86d29ca-8bdf-457d-93f0-084ecd28c4f0/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/api/category
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/slider
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/spesial/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /auth/users/me/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/spesial/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Internal Server Error: /store/spesial/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 556, in resolve
+    for pattern in self.url_patterns:
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/core/urls.py", line 27, in <module>
+    path("store/", include("store.urls", namespace="store")),
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python39/lib64/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/manamedi/store.mana-medical.ir/store/urls.py", line 5, in <module>
+    from . import views
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 16, in <module>
+    from .serializers import *
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 242, in <module>
+    class SliderSerializer(serializers.ModelSerializer):
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 243, in SliderSerializer
+    class Meta:
+  File "/home/manamedi/store.mana-medical.ir/store/serializers.py", line 244, in Meta
+    model = Slider
+NameError: name 'Slider' is not defined
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /store/carts/undefined/
+Internal Server Error: /store/orders/go_to_zarinpal/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 223, in go_to_zarinpal
+    return JsonResponse(status = status.HTTP_406_NOT_ACCEPTABLE)
+TypeError: __init__() missing 1 required positional argument: 'data'
+Not Found: /favicon.ico
+Forbidden (CSRF cookie not set.): /admin/store/product/7/change/
+[UID:1604][30048] packetLen < 0
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /store/carts/undefined/
+Not Found: /store/carts/undefined/
+Not Found: /store/api/scale/
+Not Found: /favicon.ico
+[UID:1604][36034] Child process with pid: 36056 was killed by signal: 15, core dumped: no
+[UID:1604][36034] Child process with pid: 36057 was killed by signal: 15, core dumped: no
+[UID:1604][36034] Child process with pid: 36058 was killed by signal: 15, core dumped: no
+[UID:1604][36034] Child process with pid: 36060 was killed by signal: 15, core dumped: no
+[UID:1604][36034] Child process with pid: 36061 was killed by signal: 15, core dumped: no
+[UID:1604][36034] Child process with pid: 36063 was killed by signal: 15, core dumped: no
+Not Found: /store/api/category/
+Not Found: /store/api/cat/scale
+Internal Server Error: /store/api/category/pressure-digit/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 85, in get_queryset
+    return ProductModel.objects.filter(category__in = Category.objects.get(slug =self.kwargs["slug"]).get_descendants(include_self = True)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+store.models.Category.DoesNotExist: Category matching query does not exist.
+Not Found: /store/api/cat/pressure-digit/
+Internal Server Error: /store/api/category/pressure-digit/
+Traceback (most recent call last):
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/manamedi/store.mana-medical.ir/store/views.py", line 85, in get_queryset
+    return ProductModel.objects.filter(category__in = Category.objects.get(slug =self.kwargs["slug"]).get_descendants(include_self = True)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/manamedi/virtualenv/store.mana-medical.ir/3.9/lib/python3.9/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+store.models.Category.DoesNotExist: Category matching query does not exist.
