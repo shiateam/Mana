@@ -233,11 +233,11 @@ class getTotalPriceSerializer(serializers.Serializer):
 class CustomerSerializer(serializers.ModelSerializer):
 
     user_username = serializers.CharField(read_only = True)
-    
+    order = OrderSerializer(many = True)
 
     class Meta:
         model = Customer
-        fields = ['id','first_name' ,'last_name','city','address','province','user_username','post']
+        fields = ['id','first_name' ,'last_name','city','address','province','user_username','post','order']
         
 class SliderSerializer(serializers.ModelSerializer):
     class Meta:
